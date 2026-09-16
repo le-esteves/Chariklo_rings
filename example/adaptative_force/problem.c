@@ -247,6 +247,8 @@ void force_harmonics(struct reb_simulation* r){
                 break;
             }
         }
+    } else {
+        i = 0; // assume the first particle is the central body if central_to_zero is true
     }
     if (i==-1) {
         printf("Warning: no central body found for harmonics!\n");
